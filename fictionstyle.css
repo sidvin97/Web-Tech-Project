@@ -1,0 +1,106 @@
+html, body{
+	margin:0;
+	padding:0;
+	background-image: url('scroll.jpg');
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-attachment:fixed;
+	
+}
+h1{
+	text-align:center;
+	color:#cc2900;
+	font-size:50px;
+	
+}
+.p1{
+	font-size:30px;
+	padding:10%;
+	padding-left:12%;
+	padding-top:5%;
+	padding-bottom:2%;
+	font-family: "Times New Roman", Times, serif;
+	font-weight:bold;
+	color:#330000;
+	text-shadow:gray 0.2em 0.2em 0.2em;
+}
+div{ font-size:30px;
+	padding:10%;
+	padding-top:5%;
+	padding-left:12%;
+	padding-bottom:2%;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-weight:bold;
+	text-shadow:red 0.05em 0.05em 0.05em;
+}
+#id1{
+	text-shadow:lightblue 0.05em 0.05em 0.05em;
+	text-align:center;
+	font-size:20px;
+	padding:10%;
+	padding-top:5%;
+	padding-left:12%;
+	padding-bottom:2%;
+	font-family: Verdana, Geneva, sans-serif;
+	font-weight:bold;
+	color:#000033;
+	text-decoration:underline;
+}
+
+
+nav{
+	
+	width:100%;
+	margin:0;
+}	  
+nav ul {
+	list-style:none;
+	margin:0;
+}	  
+
+nav ul li{
+	padding:0.85%;
+	width:18%;
+	display:inline-block;
+	text-align:center;
+	text-shadow:gray 0.1em 0.1em 0.1em;
+	}
+li a{
+	text-align:center;
+}
+	
+nav ul li:hover{
+	background-color: #de912a;
+	transition:background-color 1s ease-in;
+		height:0.25%;
+	}
+
+nav {
+	background-color: #9a5800;
+	/*padding:0.7%; */
+}
+.lol{
+	text-decoration:none;
+	font-size:1.5em;
+	color:black;
+	font-family:Impact, Charcoal;
+}
+.lol1{
+	text-decoration:none;
+	font-size:1.25em;
+	color:black;
+	font-family:Impact, Charcoal;
+	background-color: #de912a;
+}
+.hello:hover{
+	background-color: #9a5800;
+}
+
+a{
+	text-align:canter;
+	text-decoration:none;
+	font-size:1.25em;
+	color:black;
+	font-family:Impact, Charcoal;
+}
+

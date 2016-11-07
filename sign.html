@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<head>
+  <title>Sign up</title>
+  <link rel="stylesheet" type="text/css" href="homepagestyle.css">
+   <script src="homepagejs.js">
+	</script>
+</head>
+
+<body>
+  <nav>
+   <ul>
+   <li class="hello">
+	<script>
+		document.writeln("<span class=\"lol\">Join Us!</span>");
+	</script>
+   </li>
+   <li><a href="homepage.html" target="_parent">Home</a> </li>
+   <li><a href="About Us.html">About Us</a> </li>
+   
+  
+<!-- <li>
+   <div class="dropdown">
+   <a onclick="myFunction()" class="dropbtn">Genres</a>
+   <div id="myDropdown" class="dropdown-content">
+      <a href="#">Fiction</a>
+      <a href="#">Fantasy</a>
+      <a href="#">Non-Fiction</a>
+   </div>
+   </div>
+  </li>
+ -->  
+  
+  
+  
+  
+ <li>
+    <a href="genres.html" class="dropbtn">Genres</a>
+	<ol class="dropdown1">
+		<li><a href="#">Fiction</a></li>
+      <li><a href="#">Fantasy</a></li>
+      <li><a href="#">Non-Fiction</a></li>
+	</ol>
+	  </li>
+    <li class="lol1"><a href="#" >Sign Up</a> </li>
+   </ul>
+</nav>
+<table>
+	<tr>
+		<td class="abt">
+			<form action="#" method="post" id="sub">
+				<div class="confpass">
+				<pre><label>Enter your first name: <input type="text" name="first" class="emp" required='required'></input></label><br><br></pre>
+				<pre><label>Enter your last name:  <input type="text" name="last" class="emp1" required='required'></input></label><br><br></pre>
+				<pre><label>Enter your Username:   <input type="text" name="user" class="emp2" required='required'></input></label><br><br></pre>
+				<pre><label>Enter your Password:   <input type="password" name="pass" class="pass" required='required'></input></label><br><br></pre>
+				<pre><label>Confirm Password:      <input type="password" name="conf" class="confirm" required='required'></input></label><br><br></pre>
+				
+				<script>
+					a=document.querySelector(".pass");
+					b=document.querySelector(".confirm");
+					c=document.querySelector(".confpass");
+					/*e=document.querySelector(".emp");
+					f=document.querySelector(".emp1");
+					g=document.querySelector(".emp2");*/
+					a.addEventListener("blur",check,false);
+					b.addEventListener("blur",check,false);
+					/*e.addEventListener("blur",check,false);
+					f.addEventListener("blur",check,false);
+					g.addEventListener("blur",check,false);*/
+					di=document.createElement("div");
+					pa=document.createElement("p");
+					pa.textContent="";
+					function check()
+					{
+					if(a.value===b.value /*&& a.value!='' && b.value!='' && e.value!='' && f.value!='' && g.value!=''*/)
+					{						
+						pa.textContent="Passwords match";
+						c.appendChild(di);
+						di.appendChild(pa);
+						document.getElementById("submit").disabled=false;
+						d=document.getElementById("sub");
+						d.setAttribute("action","Thanks.php");
+					}
+					else{
+						pa.textContent="Passwords do not match";
+						c.appendChild(di);
+						di.appendChild(pa);
+						document.getElementById("submit").disabled=true;
+						d=document.getElementById("sub");
+						d.setAttribute("action","#");
+						}
+					}
+				</script>
+				</div>
+				<input type="submit"  disabled="true" name="submit" id="submit"></submit>
+			</form>
+		</td>
+		<td class="pres">
+
+		</td>
+</tr>
+</table>
+</body>
+</html>

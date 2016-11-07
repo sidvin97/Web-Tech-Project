@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+
+<head>
+  <title> Books </title>
+  <link rel="stylesheet" type="text/css" href="homepagestyle.css">
+ <script src="homepagejs.js">
+	</script>
+</head>
+
+<body>
+  <nav>
+   <ul>
+   <li class="hello">
+	<!-- <script>
+		var name=prompt("Enter your name");
+		var str=name.toUpperCase();
+		document.writeln("<span class=\"lol\">HELLO "+str+"</span>");
+	</script> -->
+	<?php
+
+	session_start();
+	extract($_SESSION);
+	error_reporting(0);
+    echo "<pre style='font-size:1.25em;
+	color:black;
+	font-family:Impact, Charcoal;'>Welcome ".$_SESSION['username']."</pre>";
+	$name=$_SESSION['username'];
+	$_SESSION['username']=$name;
+	?>
+   </li>
+   <li class="lol1"><a href="#" >Home</a> </li>
+   <li><a href="About Us.php" >About Us</a> </li>
+   
+  
+<!-- <li>
+   <div class="dropdown">
+   <a onclick="myFunction()" class="dropbtn">Genres</a>
+   <div id="myDropdown" class="dropdown-content">
+      <a href="#">Fiction</a>
+      <a href="#">Fantasy</a>
+      <a href="#">Non-Fiction</a>
+   </div>
+   </div>
+  </li>
+ -->  
+  
+  
+  
+  
+ <li>
+    <a href="genres.php" class="dropbtn">Genres</a>
+	<ol class="dropdown1">
+		<li><a href="#" target="_blank">Fiction</a></li>
+      <li><a href="#" target="_blank">Fantasy</a></li>
+      <li><a href="#" target="_blank">Non-Fiction</a></li>
+	</ol>
+	  </li>
+  
+
+   
+   
+   
+   
+   <li class="logout"><a href="login.php">Logout</a> </li>
+   
+   
+   </ul>
+   <script>
+	var log=document.querySelector(".logout");
+	log.addEventListener("click",destroy,false);
+	function destroy()
+	{
+		<?php
+		session_destroy();
+		?>
+	}
+   </script>
+</nav>
+
+
+<table>
+
+<tr>
+<td>
+<div class="hp">
+	<div height="500em" width="500em">
+  <img src="curse.jpg" /></div>
+  <h3>Warner Bros. Denies Reports Of a 'Harry Potter and the Cursed Child' Movie Trilogy.</h3>
+  Back in July, Warner Bros. Pictures filed a trademark for Harry Potter and the Cursed Child. This might not seem surprising since the film studio was the distributor of every single film in the Harry Potter franchise, as well as the upcoming spin-off Fantastic Beasts and Where to Find Them. However...
+  <br>
+  <a href="http://www.slashfilm.com/harry-potter-and-the-cursed-child-movie-trilogy/" class="click" target="_blank">click here to read more </a><br><br>
+  <form action="Thank.html" method="post">
+	<h3>Comment on the book:<br><br><input type="text" class="textarea" rows="10" placeholder="Enter your opinion here"></input></h3><br>
+				<input type="submit" name="submit" class="sub1"></submit>
+			</form>
+</div>  
+</td>
+
+<td> 
+<div class="grr">
+<div height="500em" width="500em">
+  <img src="grrm1.jpg" /></div><br><br><br><br>
+  <h3>'Winds Of Winter' Expected By 2017; 'GOT' Season 7 To Be Based Off Books 6 & 7?</h3>
+  The release date of "Winds of Winter" has been very much demanded by avid fans of the book series "A Song of Ice and Fire" by George R.R. Martin. This will be the sixth book of the series and will be the next book after "A Dance With Dragons". There have been allegations that the book will not be released soon since... <br>
+  <a href="http://www.itechpost.com/articles/22561/20160722/winds-winter-expected-2017-season-7-based-books-6.htm" class="click" target="_blank">click here to read more </a><br><br>
+  <form action="Thank.html" method="post">
+  <h3>Comment on the A Song of Ice and Fire Series:<br><br>
+  
+  <input type="text" class="textarea" rows="10" placeholder="Enter your opinion here"></input></h3><br>
+  
+				<input type="submit" name="submit" class ="sub1"></submit>
+			</form>
+</div>
+</td>
+</tr>
+</table>
+ 
+  
+</body>
+
+
+</html>
